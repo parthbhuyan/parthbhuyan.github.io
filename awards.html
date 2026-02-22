@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+
+    <!-- Basic SEO -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Partha Bhuyan | Cybersecurity & Full Stack Developer</title>
+
+    <meta name="description"
+        content="Partha Bhuyan is a Cybersecurity & Full Stack Developer specializing in Penetration Testing, Ethical Hacking, Secure Architecture, and modern web & mobile application development.">
+    <meta name="keywords"
+        content="Partha Bhuyan, Cybersecurity, Ethical Hacking, Penetration Testing, Full Stack Developer, Secure Web Development, Portfolio">
+    <meta name="author" content="Partha Bhuyan">
+
+    <!-- Open Graph (Facebook, LinkedIn, WhatsApp Preview) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Partha Bhuyan | Cybersecurity & Full Stack Developer">
+    <meta property="og:description"
+        content="Building & Securing Modern Digital Experiences. Expert in Ethical Hacking, Penetration Testing, and Secure Full Stack Development.">
+    <meta property="og:url" content="https://parthbhuyan.github.io">
+    <meta property="og:image" content="https://parthbhuyan.github.io/preview.png">
+    <meta property="og:image:width" content="1280">
+    <meta property="og:image:height" content="640">
+    <meta property="og:site_name" content="Partha Bhuyan Portfolio">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Partha Bhuyan | Cybersecurity & Full Stack Developer">
+    <meta name="twitter:description"
+        content="Cybersecurity expert & Full Stack Developer building secure, scalable digital solutions.">
+    <meta name="twitter:image" content="https://parthbhuyan.github.io/preview.png">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Awards & Certifications | Partha Bhuyan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="awards.css">
+</head>
+
+<body>
+
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="logo">
+            <span class="logo-bracket">&lt;</span>PB<span class="logo-bracket">/&gt;</span>
+        </a>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html#home" class="nav-link">Home</a></li>
+            <li><a href="index.html#about" class="nav-link">About</a></li>
+            <li><a href="index.html#services" class="nav-link">Service</a></li>
+            <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            <li><a href="awards.html" class="nav-link active">Awards</a></li>
+            <li><a href="blogs.html" class="nav-link">Blogs</a></li>
+            <li><a href="feedback.html" class="nav-link">Feedback</a></li>
+        </ul>
+        <div class="nav-actions">
+            <button class="theme-toggle" id="themeToggle"><i class="fa-solid fa-moon" id="themeIcon"></i></button>
+            <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <!-- PAGE BANNER -->
+    <section class="page-banner">
+        <div class="page-banner-bg">
+            <div class="grid-overlay"></div>
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+        </div>
+        <div class="page-banner-content">
+            <div class="breadcrumb reveal-up">
+                <a href="index.html">Home</a>
+                <i class="fa-solid fa-chevron-right"></i>
+                <span>Awards</span>
+            </div>
+            <h1 class="reveal-up" style="--delay:0.1s">
+                Awards & <span>Certifications</span>
+            </h1>
+            <p class="reveal-up" style="--delay:0.2s">
+                Recognitions, achievements, and professional certifications earned through dedication and expertise in
+                cybersecurity and technology.
+            </p>
+        </div>
+    </section>
+
+    <!-- STATS ROW -->
+    <section class="awards-stats">
+        <div class="container">
+            <div class="stats-row">
+                <div class="award-stat reveal-up" style="--delay:0s">
+                    <span class="award-stat-num">10+</span>
+                    <span class="award-stat-label">Certifications</span>
+                </div>
+                <div class="award-stat reveal-up" style="--delay:0.1s">
+                    <span class="award-stat-num">3+</span>
+                    <span class="award-stat-label">Hackathons</span>
+                </div>
+                <div class="award-stat reveal-up" style="--delay:0.2s">
+                    <span class="award-stat-num">2</span>
+                    <span class="award-stat-label">Paper Presentations</span>
+                </div>
+                <div class="award-stat reveal-up" style="--delay:0.3s">
+                    <span class="award-stat-num">AWS</span>
+                    <span class="award-stat-label">Certified</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FILTER TABS -->
+    <section class="awards-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">ACHIEVEMENTS</span>
+                <h2 class="section-title">My <span>Recognition</span></h2>
+            </div>
+
+            <div class="filter-tabs">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="certification">Certifications</button>
+                <button class="filter-btn" data-filter="hackathon">Hackathons</button>
+                <button class="filter-btn" data-filter="academic">Academic</button>
+            </div>
+
+            <div class="awards-grid" id="awardsGrid">
+                <!-- Dynamic content loaded by awards.js -->
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo"><span class="logo-bracket">&lt;</span>PB<span
+                            class="logo-bracket">/&gt;</span></a>
+                    <p>Cybersecurity & Full Stack Developer building secure digital solutions.</p>
+                    <div class="footer-socials">
+                        <a href="https://github.com/parthbhuyan/" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://linkedin.com/parthbhuyan/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://twitter.com/parthbhuyan" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://youtube.com/@ParthaBhuyan.Social/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Pages</h4>
+                    <ul>
+                        <li><a href="awards.html">Awards</a></li>
+                        <li><a href="blogs.html">Blogs</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:parthabhuyan@myyahoo.com">Email Me</a></li>
+                        <li><a href="tel:+916000249302">Call Me</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 All Rights Reserved | Developed by <span>Partha Bhuyan</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="scroll-top" id="scrollTop"><i class="fa-solid fa-arrow-up"></i></div>
+
+    <script src="awards.js"></script>
+</body>
+
+</html>

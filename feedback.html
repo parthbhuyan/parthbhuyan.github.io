@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback | Partha Bhuyan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="logo">
+            <span class="logo-bracket">&lt;</span>PB<span class="logo-bracket">/&gt;</span>
+        </a>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html#home" class="nav-link">Home</a></li>
+            <li><a href="index.html#about" class="nav-link">About</a></li>
+            <li><a href="index.html#services" class="nav-link">Service</a></li>
+            <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            <li><a href="awards.html" class="nav-link">Awards</a></li>
+            <li><a href="blogs.html" class="nav-link">Blogs</a></li>
+            <li><a href="feedback.html" class="nav-link active">Feedback</a></li>
+        </ul>
+        <div class="nav-actions">
+            <button class="theme-toggle" id="themeToggle"><i class="fa-solid fa-moon" id="themeIcon"></i></button>
+            <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <!-- PAGE BANNER -->
+    <section class="page-banner">
+        <div class="page-banner-bg">
+            <div class="grid-overlay"></div>
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+        </div>
+        <div class="page-banner-content">
+            <div class="breadcrumb reveal-up">
+                <a href="index.html">Home</a>
+                <i class="fa-solid fa-chevron-right"></i>
+                <span>Feedback</span>
+            </div>
+            <h1 class="reveal-up" style="--delay:0.1s">Client <span>Feedback</span></h1>
+            <p class="reveal-up" style="--delay:0.2s">
+                Honest reviews from clients and collaborators. Your feedback helps me grow and deliver better results.
+            </p>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS GRID -->
+    <section class="feedback-grid-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">TESTIMONIALS</span>
+                <h2 class="section-title">What Clients <span>Say</span></h2>
+            </div>
+
+            <div class="feedback-grid" id="feedbackGrid">
+                <!-- Dynamic content loaded by feedback.js -->
+            
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FEEDBACK FORM -->
+    <section class="feedback-form-section">
+        <div class="container">
+            <div class="form-layout">
+                <div class="form-left reveal-left">
+                    <div class="section-header" style="text-align:left; margin-bottom:32px;">
+                        <span class="section-tag">SHARE YOURS</span>
+                        <h2 class="section-title">Leave <span>Feedback</span></h2>
+                    </div>
+                    <p>Worked with me on a project? Attended one of my talks? I'd love to hear your experience. Your feedback helps me improve and inspires others.</p>
+                    <div class="form-highlights">
+                        <div class="form-highlight">
+                            <i class="fa-solid fa-shield-halved"></i>
+                            <span>Your data is private and secure</span>
+                        </div>
+                        <div class="form-highlight">
+                            <i class="fa-solid fa-clock"></i>
+                            <span>Takes less than 2 minutes</span>
+                        </div>
+                        <div class="form-highlight">
+                            <i class="fa-solid fa-star"></i>
+                            <span>All feedback is valued and appreciated</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-right reveal-right">
+                    <form class="feedback-form" id="feedbackForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="clientName">Full Name *</label>
+                                <input type="text" id="clientName" name="clientName" placeholder="Your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="profession">Profession *</label>
+                                <input type="text" id="profession" name="profession" placeholder="Your role" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+91 XXXXXXXXXX">
+                            </div>
+                            <div class="form-group">
+                                <label for="feedbackEmail">Email *</label>
+                                <input type="email" id="feedbackEmail" name="email" placeholder="your@email.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Your Rating *</label>
+                            <div class="star-rating" id="starRating">
+                                <i class="fa-regular fa-star" data-val="1"></i>
+                                <i class="fa-regular fa-star" data-val="2"></i>
+                                <i class="fa-regular fa-star" data-val="3"></i>
+                                <i class="fa-regular fa-star" data-val="4"></i>
+                                <i class="fa-regular fa-star" data-val="5"></i>
+                            </div>
+                            <input type="hidden" id="ratingValue" name="rating" value="0">
+                        </div>
+                        <div class="form-group">
+                            <label for="profileImage">Profile Photo (optional)</label>
+                            <div class="file-upload" id="fileUpload">
+                                <i class="fa-solid fa-cloud-arrow-up"></i>
+                                <span>Click to upload photo</span>
+                                <input type="file" id="profileImage" name="profileImage" accept="image/*">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="feedbackText">Your Feedback *</label>
+                            <textarea id="feedbackText" name="feedback" rows="5" placeholder="Share your experience working with me..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary full-width" id="feedbackSubmitBtn">
+                            <i class="fa-solid fa-paper-plane"></i> Submit Feedback
+                        </button>
+                        <div class="form-status" id="feedbackStatus"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo"><span class="logo-bracket">&lt;</span>PB<span class="logo-bracket">/&gt;</span></a>
+                    <p>Cybersecurity & Full Stack Developer building secure digital solutions.</p>
+                    <div class="footer-socials">
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links"><h4>Quick Links</h4><ul>
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul></div>
+                <div class="footer-links"><h4>Pages</h4><ul>
+                    <li><a href="awards.html">Awards</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul></div>
+                <div class="footer-links"><h4>Contact</h4><ul>
+                    <li><a href="mailto:parthabhuyan@myyahoo.com">Email Me</a></li>
+                    <li><a href="tel:+916000249302">Call Me</a></li>
+                </ul></div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 All Rights Reserved | Developed by <span>Partha Bhuyan</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="scroll-top" id="scrollTop"><i class="fa-solid fa-arrow-up"></i></div>
+
+    <script src="feedback.js"></script>
+</body>
+</html>

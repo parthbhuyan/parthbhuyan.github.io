@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <!-- Basic SEO -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Partha Bhuyan | Cybersecurity & Full Stack Developer</title>
+
+    <meta name="description"
+        content="Partha Bhuyan is a Cybersecurity & Full Stack Developer specializing in Penetration Testing, Ethical Hacking, Secure Architecture, and modern web & mobile application development.">
+    <meta name="keywords"
+        content="Partha Bhuyan, Cybersecurity, Ethical Hacking, Penetration Testing, Full Stack Developer, Secure Web Development, Portfolio">
+    <meta name="author" content="Partha Bhuyan">
+
+    <!-- Open Graph (Facebook, LinkedIn, WhatsApp Preview) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Partha Bhuyan | Cybersecurity & Full Stack Developer">
+    <meta property="og:description"
+        content="Building & Securing Modern Digital Experiences. Expert in Ethical Hacking, Penetration Testing, and Secure Full Stack Development.">
+    <meta property="og:url" content="https://parthbhuyan.github.io">
+    <meta property="og:image" content="https://parthbhuyan.github.io/preview.png">
+    <meta property="og:image:width" content="1280">
+    <meta property="og:image:height" content="640">
+    <meta property="og:site_name" content="Partha Bhuyan Portfolio">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Partha Bhuyan | Cybersecurity & Full Stack Developer">
+    <meta name="twitter:description"
+        content="Cybersecurity expert & Full Stack Developer building secure, scalable digital solutions.">
+    <meta name="twitter:image" content="https://parthbhuyan.github.io/preview.png">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Partha Bhuyan | Cybersecurity & Full Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <!-- PAGE LOADER -->
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-inner">
+            <div class="loader-logo">
+                <span class="logo-bracket">&lt;</span>PB<span class="logo-bracket">/&gt;</span>
+            </div>
+            <div class="loader-bar-wrap">
+                <div class="loader-bar" id="loaderBar"></div>
+            </div>
+            <span class="loader-text" id="loaderText">Loading...</span>
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="logo">
+            <span class="logo-bracket">&lt;</span>PB<span class="logo-bracket">/&gt;</span>
+        </a>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#services" class="nav-link">Service</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+            <li><a href="awards.html" class="nav-link">Awards</a></li>
+            <li><a href="blogs.html" class="nav-link">Blogs</a></li>
+            <li><a href="feedback.html" class="nav-link">Feedback</a></li>
+        </ul>
+        <div class="nav-actions">
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <i class="fa-solid fa-moon" id="themeIcon"></i>
+            </button>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="grid-overlay"></div>
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="scanline"></div>
+        </div>
+
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-badge reveal-up">
+                    <span class="badge-dot"></span>
+                    Available for Freelance & Full-time
+                </div>
+
+                <h1 class="hero-name reveal-up" style="--delay:0.1s">
+                    Partha<br><span class="name-accent">Bhuyan</span>
+                </h1>
+
+                <div class="hero-roles reveal-up" style="--delay:0.2s">
+                    <span class="role-prefix">I build &amp; secure —</span>
+                    <div class="roles-ticker">
+                        <span class="role-item">Cybersecurity Systems</span>
+                        <span class="role-item">Full Stack Applications</span>
+                        <span class="role-item">Mobile Applications</span>
+                        <span class="role-item">Digital Experiences</span>
+                    </div>
+                </div>
+
+                <p class="hero-desc reveal-up" style="--delay:0.3s">
+                    Cybersecurity & Full Stack Developer focused on building and securing
+                    modern digital environments. Expert in Penetration Testing, Ethical Hacking,
+                    and Secure Server Architecture.
+                </p>
+
+                <div class="hero-actions reveal-up" style="--delay:0.4s">
+                    <a href="assets/Partha_Bhuyan_CV.pdf" target="_blank" download class="btn-primary">
+                        <i class="fa-solid fa-download"></i> Download CV
+                    </a>
+                    <a href="#contact" class="btn-outline">Let's Talk</a>
+                </div>
+
+                <div class="hero-socials reveal-up" style="--delay:0.5s">
+                    <a href="https://linkedin.com/in/parthbhuyan/" target="_blank" class="social-link"
+                        aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/parthbhuyan/" target="_blank" class="social-link" aria-label="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://twitter.com/parthbhuyan/" target="_blank" class="social-link" aria-label="Twitter">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="https://youtube.com/@ParthaBhuyan.Social/" target="_blank" class="social-link" aria-label="YouTube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-visual reveal-up" style="--delay:0.2s">
+                <div class="avatar-frame">
+                    <div class="avatar-ring ring-1"></div>
+                    <div class="avatar-ring ring-2"></div>
+                    <div class="avatar-ring ring-3"></div>
+                    <div class="avatar-img">
+                        <img src="assets/avatar-img.png" alt="Partha Bhuyan" class="avatar-photo">
+                    </div>
+                    <div class="avatar-badge top-right">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <span>Cyber</span>
+                    </div>
+                    <div class="avatar-badge bottom-left">
+                        <i class="fa-solid fa-code"></i>
+                        <span>Dev</span>
+                    </div>
+                </div>
+
+                <div class="stat-cards">
+                    <div class="stat-card">
+                        <span class="stat-num">2+</span>
+                        <span class="stat-label">Years Exp.</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-num">10+</span>
+                        <span class="stat-label">Certs</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-num">MCA</span>
+                        <span class="stat-label">Degree</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">WHO I AM</span>
+                <h2 class="section-title">About <span>Me</span></h2>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-img-col reveal-left">
+                    <div class="about-img-frame">
+                        <div class="about-img-inner">
+                            <img src="assets/about-img.png" alt="Partha Bhuyan - About" class="about-photo">
+                        </div>
+                        <div class="about-img-deco"></div>
+                        <div class="about-exp-badge">
+                            <span class="exp-num">MCA</span>
+                            <span class="exp-text">Graduate<br>RGU 2025</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-text-col reveal-right">
+                    <h3 class="about-subtitle">Cybersecurity Expert &amp; Full Stack Developer</h3>
+                    <p class="about-desc">
+                        I'm Partha Bhuyan — a passionate developer and cybersecurity specialist from Guwahati, Assam.
+                        I specialize in building secure, performant web and mobile applications while also defending
+                        digital infrastructure through ethical hacking and penetration testing.
+                    </p>
+                    <p class="about-desc">
+                        With an MCA from Rajiv Gandhi University and hands-on internship experience at NIELIT and
+                        Nandanam, I bridge the gap between development and security — building systems that are both
+                        functional and resilient.
+                    </p>
+
+                    <div class="about-info-grid">
+                        <div class="info-item">
+                            <i class="fa-solid fa-brain"></i>
+                            <div>
+                                <span class="info-label">Expertise</span>
+                                <span class="info-val">Full Stack • Cybersecurity • AWS</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <span class="info-label">Location</span>
+                                <span class="info-val">Guwahati, Assam, India</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <span class="info-label">Email</span>
+                                <span class="info-val">parthabhuyan@myyahoo.com</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <span class="info-label">Phone</span>
+                                <span class="info-val">+91 6000249302</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-solid fa-language"></i>
+                            <div>
+                                <span class="info-label">Languages</span>
+                                <span class="info-val">English, Hindi, Assamese, Bengali</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-solid fa-heart"></i>
+                            <div>
+                                <span class="info-label">Interests</span>
+                                <span class="info-val">Travelling, Reading, Writing, Cooking</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="assets/Partha_Bhuyan_CV.pdf" target="_blank" download class="btn-primary">
+                        <i class="fa-solid fa-file-arrow-down"></i> Download Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">EXPERTISE</span>
+                <h2 class="section-title">My <span>Skills</span></h2>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-category reveal-up" style="--delay:0s">
+                    <h3><i class="fa-solid fa-shield-halved"></i> Cybersecurity</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-name"><span>Penetration Testing</span><span>80%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name"><span>Ethical Hacking</span><span>78%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="78"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name"><span>Digital Defense</span><span>75%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name"><span>Secure Server Architecture</span><span>72%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="72"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category reveal-up" style="--delay:0.1s">
+                    <h3><i class="fa-solid fa-code"></i> Development</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-name"><span>Full Stack (React/Node)</span><span>82%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="82"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name"><span>HTML / CSS / JS</span><span>88%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="88"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name"><span>PHP / MySQL</span><span>75%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name"><span>Flutter / Dart</span><span>70%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="70"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category reveal-up" style="--delay:0.2s">
+                    <h3><i class="fa-solid fa-cloud"></i> Cloud & Tools</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-name"><span>AWS Security</span><span>76%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="76"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name"><span>Linux</span><span>80%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name"><span>Python / C/C++</span><span>72%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="72"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name"><span>Research & Dev</span><span>68%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="68"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tech badges -->
+            <div class="tech-badges reveal-up" style="--delay:0.3s">
+                <span class="tech-badge">React</span>
+                <span class="tech-badge">Node.js</span>
+                <span class="tech-badge">PHP</span>
+                <span class="tech-badge">MySQL</span>
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">Flutter</span>
+                <span class="tech-badge">AWS</span>
+                <span class="tech-badge">Linux</span>
+                <span class="tech-badge">C/C++</span>
+                <span class="tech-badge">Git</span>
+                <span class="tech-badge">Kali Linux</span>
+                <span class="tech-badge">Metasploit</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">WHAT I OFFER</span>
+                <h2 class="section-title">My <span>Services</span></h2>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card reveal-up" style="--delay:0s">
+                    <div class="service-icon"><i class="fa-solid fa-shield-virus"></i></div>
+                    <h3>Penetration Testing</h3>
+                    <p>Comprehensive vulnerability assessment and penetration testing for web applications, networks,
+                        and systems to identify security gaps before attackers do.</p>
+                    <div class="service-line"></div>
+                </div>
+                <div class="service-card reveal-up" style="--delay:0.1s">
+                    <div class="service-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                    <h3>Full Stack Development</h3>
+                    <p>Building complete web applications from frontend to backend using React, Node.js, PHP, and MySQL
+                        with a focus on performance and security.</p>
+                    <div class="service-line"></div>
+                </div>
+                <div class="service-card reveal-up" style="--delay:0.2s">
+                    <div class="service-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+                    <h3>Mobile App Development</h3>
+                    <p>Cross-platform mobile applications using Flutter/Dart, delivering native-like experiences for
+                        both Android and iOS platforms.</p>
+                    <div class="service-line"></div>
+                </div>
+                <div class="service-card reveal-up" style="--delay:0.3s">
+                    <div class="service-icon"><i class="fa-solid fa-server"></i></div>
+                    <h3>Secure Server Architecture</h3>
+                    <p>Designing and implementing hardened server infrastructures with proper security controls,
+                        monitoring, and incident response capabilities.</p>
+                    <div class="service-line"></div>
+                </div>
+                <div class="service-card reveal-up" style="--delay:0.4s">
+                    <div class="service-icon"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+                    <h3>Cloud Security (AWS)</h3>
+                    <p>Securing cloud environments with AWS best practices, IAM policies, security groups, and
+                        compliance frameworks for enterprise-grade protection.</p>
+                    <div class="service-line"></div>
+                </div>
+                <div class="service-card reveal-up" style="--delay:0.5s">
+                    <div class="service-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+                    <h3>Security Research</h3>
+                    <p>Researching emerging threats, writing technical papers, and staying ahead of the cybersecurity
+                        landscape to deliver cutting-edge solutions.</p>
+                    <div class="service-line"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY HIRE ME SECTION -->
+    <section class="why-hire" id="why-hire">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">MY PROFILE</span>
+                <h2 class="section-title">Why Hire <span>Me?</span></h2>
+            </div>
+
+            <div class="why-hire-layout">
+                <div class="tabs-nav reveal-left">
+                    <button class="tab-btn active" data-tab="experience">
+                        <i class="fa-solid fa-briefcase"></i> Experience
+                    </button>
+                    <button class="tab-btn" data-tab="education">
+                        <i class="fa-solid fa-graduation-cap"></i> Education
+                    </button>
+                    <button class="tab-btn" data-tab="process">
+                        <i class="fa-solid fa-gears"></i> Work Process
+                    </button>
+                    <button class="tab-btn" data-tab="ethics">
+                        <i class="fa-solid fa-handshake"></i> Work Ethics
+                    </button>
+                    <button class="tab-btn" data-tab="availability">
+                        <i class="fa-solid fa-clock"></i> Availability
+                    </button>
+                </div>
+
+                <div class="tab-content reveal-right">
+                    <div class="tab-panel active" id="tab-experience">
+                        <h3>Professional Experience</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-body">
+                                    <span class="timeline-date">Jan – Jul 2025</span>
+                                    <h4>Mobile Application Development Intern</h4>
+                                    <p class="timeline-org">NIELIT, Tezpur, Assam</p>
+                                    <ul>
+                                        <li>Completed Work Based Learning (WBL) Level-1 in Mobile Application
+                                            Development</li>
+                                        <li>Executed development projects under the Ministry of Electronics and
+                                            Information Technology</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-body">
+                                    <span class="timeline-date">Apr – May 2024</span>
+                                    <h4>Cyber Security Intern</h4>
+                                    <p class="timeline-org">Nandanam, Chennai</p>
+                                    <ul>
+                                        <li>Focused on the Cyber Security internship track, gaining practical experience
+                                            in digital defense</li>
+                                        <li>Managed technical tasks and research to drive learning goals in a
+                                            professional environment</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-panel" id="tab-education">
+                        <h3>Education Background</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-body">
+                                    <span class="timeline-date">2023 – 2025</span>
+                                    <h4>Master of Computer Application (MCA)</h4>
+                                    <p class="timeline-org">Rajiv Gandhi University, Arunachal Pradesh</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-body">
+                                    <span class="timeline-date">2019 – 2022</span>
+                                    <h4>Bachelor of Computer Application (BCA)</h4>
+                                    <p class="timeline-org">Gauhati University, Guwahati, Assam</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-body">
+                                    <span class="timeline-date">2017 – 2019</span>
+                                    <h4>Intermediate: Commerce (Class XII)</h4>
+                                    <p class="timeline-org">Govt. Boy's H.S. School, Nagaon, Assam</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-body">
+                                    <span class="timeline-date">2015 – 2016</span>
+                                    <h4>Matriculation (Class X)</h4>
+                                    <p class="timeline-org">Rupahi H.S. School, Nagaon, Assam</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-panel" id="tab-process">
+                        <h3>My Work Process</h3>
+                        <div class="process-steps">
+                            <div class="process-step">
+                                <div class="step-num">01</div>
+                                <div class="step-content">
+                                    <h4>Discovery & Planning</h4>
+                                    <p>Understanding requirements, threat modeling, and architecting the right solution
+                                        from the ground up.</p>
+                                </div>
+                            </div>
+                            <div class="process-step">
+                                <div class="step-num">02</div>
+                                <div class="step-content">
+                                    <h4>Design & Development</h4>
+                                    <p>Building with clean code principles, integrating security at every layer of the
+                                        stack.</p>
+                                </div>
+                            </div>
+                            <div class="process-step">
+                                <div class="step-num">03</div>
+                                <div class="step-content">
+                                    <h4>Testing & Hardening</h4>
+                                    <p>Penetration testing, vulnerability assessment, and performance optimization
+                                        before launch.</p>
+                                </div>
+                            </div>
+                            <div class="process-step">
+                                <div class="step-num">04</div>
+                                <div class="step-content">
+                                    <h4>Deploy & Monitor</h4>
+                                    <p>Secure deployment, continuous monitoring, and proactive incident response setup.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-panel" id="tab-ethics">
+                        <h3>Work Ethics</h3>
+                        <div class="ethics-grid">
+                            <div class="ethic-item">
+                                <i class="fa-solid fa-lock"></i>
+                                <h4>Integrity</h4>
+                                <p>All security work follows strict ethical guidelines. I only test what I'm authorized
+                                    to test.</p>
+                            </div>
+                            <div class="ethic-item">
+                                <i class="fa-solid fa-clock-rotate-left"></i>
+                                <h4>Punctuality</h4>
+                                <p>Deadlines are sacred. I communicate proactively and deliver on time, every time.</p>
+                            </div>
+                            <div class="ethic-item">
+                                <i class="fa-solid fa-arrows-to-dot"></i>
+                                <h4>Precision</h4>
+                                <p>Detail-oriented approach to both code quality and security assessments.</p>
+                            </div>
+                            <div class="ethic-item">
+                                <i class="fa-solid fa-book-open-reader"></i>
+                                <h4>Continuous Learning</h4>
+                                <p>Cybersecurity evolves daily. I stay updated with latest threats, CVEs, and
+                                    technologies.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-panel" id="tab-availability">
+                        <h3>Availability</h3>
+                        <div class="availability-info">
+                            <div class="avail-card">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <h4>Open to Opportunities</h4>
+                                <p>Currently available for full-time roles, freelance projects, and internships in
+                                    Cybersecurity and Full Stack Development.</p>
+                            </div>
+                            <div class="avail-card">
+                                <i class="fa-solid fa-globe"></i>
+                                <h4>Remote & On-site</h4>
+                                <p>Comfortable working remotely or relocating. Based in Assam, India. Open to
+                                    opportunities across India and globally.</p>
+                            </div>
+                            <div class="avail-card">
+                                <i class="fa-solid fa-calendar-check"></i>
+                                <h4>Response Time</h4>
+                                <p>Typically respond within 24 hours. For urgent projects, reach out via phone: +91
+                                    6000249302.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO SECTION -->
+    <section class="portfolio-section" id="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">MY WORK</span>
+                <h2 class="section-title">Featured <span>Projects</span></h2>
+            </div>
+            <div class="portfolio-grid" id="portfolioGrid">
+                <!-- Dynamic content loaded by index.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">TESTIMONIALS</span>
+                <h2 class="section-title">What They <span>Say</span></h2>
+            </div>
+
+            <div class="testimonial-carousel">
+                <div class="testimonial-track" id="testimonialTrack">
+                    <!-- Dynamic testimonials loaded by index.js -->
+
+                </div>
+                <div class="carousel-controls">
+                    <button class="carousel-btn" id="prevBtn"><i class="fa-solid fa-chevron-left"></i></button>
+                    <div class="carousel-dots" id="carouselDots"></div>
+                    <button class="carousel-btn" id="nextBtn"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">GET IN TOUCH</span>
+                <h2 class="section-title">Contact <span>Me</span></h2>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info reveal-left">
+                    <h3>Let's Build Something Secure</h3>
+                    <p>Whether you need a penetration test, a full stack app, or a mobile solution — I'm here to help.
+                        Reach out and let's discuss your project.</p>
+
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div>
+                                <span class="contact-label">Address</span>
+                                <span class="contact-val">Guwahati, Assam, India - 782125</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                            <div>
+                                <span class="contact-label">Phone</span>
+                                <span class="contact-val">+91 6000249302</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div>
+                                <span class="contact-label">Email</span>
+                                <span class="contact-val">parthabhuyan@myyahoo.com</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fa-brands fa-linkedin"></i></div>
+                            <div>
+                                <span class="contact-label">LinkedIn</span>
+                                <span class="contact-val">Partha Bhuyan</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-socials">
+                        <a href="https://github.com/parthbhuyan/" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://linkedin.com/parthbhuyan/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://twitter.com/parthbhuyan" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://youtube.com/@ParthaBhuyan.Social/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrap reveal-right">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" placeholder="Partha Bhuyan" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Project Discussion" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..."
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary full-width" id="submitBtn">
+                            <i class="fa-solid fa-paper-plane"></i> Send Message
+                        </button>
+                        <div class="form-status" id="formStatus"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-bracket">&lt;</span>PB<span class="logo-bracket">/&gt;</span>
+                    </a>
+                    <p>Cybersecurity & Full Stack Developer building secure digital solutions. Based in Assam, India.
+                    </p>
+                    <div class="footer-socials">
+                        <a href="https://github.com/parthbhuyan/" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://linkedin.com/parthbhuyan" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://twitter.com/parthbhuyan/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://youtube.com/@ParthaBhuyan.Social/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Pages</h4>
+                    <ul>
+                        <li><a href="awards.html">Awards</a></li>
+                        <li><a href="blogs.html">Blogs</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Penetration Testing</a></li>
+                        <li><a href="#">Full Stack Dev</a></li>
+                        <li><a href="#">Mobile Apps</a></li>
+                        <li><a href="#">Cloud Security</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> All Rights Reserved | Developed by <span>Partha Bhuyan</span></p>
+                <p>Cybersecurity & Full Stack Developer</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="scroll-top" id="scrollTop">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
