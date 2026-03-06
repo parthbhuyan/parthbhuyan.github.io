@@ -234,6 +234,9 @@ function initFilter() {
         });
     });
 }
+/*---Auto Year---*/ 
+
+document.getElementById("year").textContent = new Date().getFullYear();
 
 /* ─── INIT ─── */
 document.addEventListener('DOMContentLoaded', loadAwards);
