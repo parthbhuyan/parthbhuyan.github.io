@@ -382,6 +382,10 @@ function setupSearch() {
     });
 }
 
+/*---Auto Year---*/ 
+
+document.getElementById("year").textContent = new Date().getFullYear();
+
 /* ═══════════════════════════════════════
    INIT
    ═══════════════════════════════════════ */
